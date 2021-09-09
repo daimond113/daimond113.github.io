@@ -1,7 +1,5 @@
 import React from 'react'
 import Header from '../components/Header'
-import Link from '../components/Link'
-import Section from '../components/Section'
 import Head from 'next/head'
 
 export default function Home() {
