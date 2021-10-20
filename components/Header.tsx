@@ -7,14 +7,14 @@ export default function Header() {
 						<div className="flex-shrink-0 flex items-center text-white">
 							<img
 								className="block lg:hidden rounded"
-								src="/logoTextWhite.svg"
+								src="/logo.svg"
 								alt="daimond113"
 								height="48"
 								width="48"
 							/>
 							<img
 								className="hidden lg:block"
-								src="/logo.svg"
+								src="/logoText.svg"
 								alt="daimond113"
 								height="24"
 								width="167"
