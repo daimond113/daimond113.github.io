@@ -1,28 +1,14 @@
-export default function Header() {
-	return (
-		<nav className="bg-gray-800 fixed top-0 w-full z-50 shadow-md">
-			<div className="max-w-8.5xl mx-auto px-2 sm:px-6 lg:px-8">
-				<div className="relative flex items-center justify-between h-16">
-					<div className="flex-1 flex items-center justify-center sm:items-stretch lg:justify-start">
-						<div className="flex-shrink-0 flex items-center text-white">
-							<img
-								className="block lg:hidden rounded"
-								src="/logo.svg"
-								alt="daimond113"
-								height="48"
-								width="48"
-							/>
-							<img
-								className="hidden lg:block"
-								src="/logoText.svg"
-								alt="daimond113"
-								height="24"
-								width="167"
-							/>
-						</div>
-					</div>
-				</div>
+export function Header() {
+	return <header className={"w-full h-12 items-center bg-header shadow-sm static top-0 z-50 flex-grow-0 flex-shrink-0"}>
+		<div className="md:ml-20 h-full flex items-center justify-center md:justify-start">
+			<a href="/" className="h-2/3 hidden md:block">
+				<img src="https://www.daimond113.com/logoText.svg" className="h-full" />
+			</a>
+			<div className="h-full p-1">
+				<a href="/" className="h-full w-full block md:hidden">
+					<img src="https://www.daimond113.com/logo.svg" className="rounded-md h-full w-full" />
+				</a>
 			</div>
-		</nav>
-	)
+		</div>
+	</header>
 }
