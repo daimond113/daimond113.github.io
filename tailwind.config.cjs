@@ -1,0 +1,66 @@
+// @ts-check
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "media",
+  theme: {
+    extend: {
+      typography: ({ theme }) => ({
+        "on-surface": {
+          css: {
+            "--tw-prose-body": theme("colors.on-surface"),
+            "--tw-prose-headings": theme("colors.on-surface"),
+            "--tw-prose-lead": theme("colors.on-surface-variant"),
+            "--tw-prose-links": theme("colors.on-tertiary-container"),
+            "--tw-prose-bold": theme("colors.on-surface"),
+            "--tw-prose-counters": theme("colors.on-surface-variant"),
+            "--tw-prose-bullets": theme("colors.on-surface-variant"),
+            "--tw-prose-quotes": theme("colors.on-secondary"),
+            "--tw-prose-quote-borders": theme("colors.on-secondary"),
+            "--tw-prose-captions": theme("colors.surface-variant"),
+            "--tw-prose-code": theme("colors.on-tertiary-container"),
+            "--tw-prose-pre-code": theme("colors.on-tertiary-container"),
+            "--tw-prose-pre-bg": theme("colors.secondary-container"),
+          },
+        },
+      }),
+      colors: {
+        primary: "var(--primary)",
+        "on-primary": "var(--on-primary)",
+        "primary-container": "var(--primary-container)",
+        "on-primary-container": "var(--on-primary-container)",
+        secondary: "var(--secondary)",
+        "on-secondary": "var(--on-secondary)",
+        "secondary-container": "var(--secondary-container)",
+        "on-secondary-container": "var(--on-secondary-container)",
+        tertiary: "var(--tertiary)",
+        "on-tertiary": "var(--on-tertiary)",
+        "tertiary-container": "var(--tertiary-container)",
+        "on-tertiary-container": "var(--on-tertiary-container)",
+        error: "var(--error)",
+        "on-error": "var(--on-error)",
+        "error-container": "var(--error-container)",
+        "on-error-container": "var(--on-error-container)",
+        background: "var(--background)",
+        "on-background": "var(--on-background)",
+        surface: "var(--surface)",
+        "on-surface": "var(--on-surface)",
+        "surface-variant": "rgba(var(--surface-variant), <alpha-value>)",
+        "on-surface-variant": "var(--on-surface-variant)",
+        outline: "var(--outline)",
+        "outline-variant": "var(--outline-variant)",
+        shadow: "var(--shadow)",
+        scrim: "var(--scrim)",
+        "inverse-surface": "var(--inverse-surface)",
+        "inverse-on-surface": "var(--inverse-on-surface)",
+        "inverse-primary": "var(--inverse-primary)",
+        "true-primary": "#1E0F40",
+      },
+      fontFamily: {
+        sans: "'Poppins', sans-serif",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/typography")],
+}
